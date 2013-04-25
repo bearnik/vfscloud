@@ -1,0 +1,9 @@
+# Removing index.php
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+
+RewriteCond $1 !^(index\.php|images|themes|js|utest|robots\.txt|favicon\.ico)
+RewriteRule ^(.*)$ /index.php[L]
+
+</IfModule>
